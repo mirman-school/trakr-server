@@ -1,9 +1,13 @@
 const User = require("./User");
-const SchoolYear = require("./SchoolYear");
-const School = require("./School");
+const Season = require("./Season");
+const Meet = require("./Meet");
+const League = require("./League");
+const Event = require("./Event");
 
 module.exports = {
     User,
-    SchoolYear,
-    School
+    Season,
+    Meet,
+    League,
+    Event
 }
