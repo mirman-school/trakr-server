@@ -15,29 +15,99 @@ mongoose.connect(connectionUrl, (err) => {
 
 app.use(bodyParser.json());
 
-app.route("/schoolyears")
+app.route("/users")
 .get((req, res) => {
-    models.SchoolYear.find((err,data) => {
-        if (err) throw err;
-        res.send(data);
-    })
+
 })
-.post((req, res) => {
-    const longName = req.body.longName;
-    const shortName = req.body.shortName;
-    const newSchool = new models.School({longName, shortName});
-    newSchool.save((err) => {
-        if (err) res.status(500).send("Could not save");
-        res.status(200).send("New School Saved");
-    });
+.push((req, res) => {
+
 });
 
-app.route("/schools")
-.get((req,res) => {
-    models.School.find((err, data) => {
-        if (err) throw err;
-        res.send(data);
-    })
+app.route("/users/:id")
+.get((req, res) => {
+
+})
+.post((req, res) => {
+
+})
+.delete((req, res) => {
+
+});
+
+app.route("/seasons")
+.get((req, res) => {
+
+})
+.push((req, res) => {
+
+});
+
+app.route("/seasons/:id")
+.get((req, res) => {
+
+})
+.post((req, res) => {
+
+})
+.delete((req, res) => {
+
+});
+
+app.route("/meets")
+.get((req, res) => {
+
+})
+.push((req, res) => {
+
+});
+
+app.route("/meets/:id")
+.get((req, res) => {
+
+})
+.post((req, res) => {
+
+})
+.delete((req, res) => {
+
+});
+
+app.route("/leagues")
+.get((req, res) => {
+
+})
+.push((req, res) => {
+
+});
+
+app.route("/leagues/:id")
+.get((req, res) => {
+
+})
+.post((req, res) => {
+
+})
+.delete((req, res) => {
+
+});
+
+app.route("/events")
+.get((req, res) => {
+
+})
+.push((req, res) => {
+
+});
+
+app.route("/events/:id")
+.get((req, res) => {
+
+})
+.post((req, res) => {
+
+})
+.delete((req, res) => {
+
 });
 
 app.listen(config.server.listenPort, () => {
