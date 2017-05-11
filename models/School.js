@@ -3,7 +3,8 @@ const Schema = mongoose.Schema;
 
 const schoolSchema = new Schema({
     shortName: {type: String, required: true},
-    longName: {type: String, required: true}
+    longName: {type: String, required: true},
+    leagueIds: {type: [Objectid], required: true}
 });
 
 module.exports = mongoose.model("School", schoolSchema);

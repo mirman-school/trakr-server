@@ -12,6 +12,7 @@ module.exports = {
     School,
     Meet,
     League,
-    Event,
     Athlete,
+    School,
+    Event
 }
