@@ -9,5 +9,7 @@ module.exports = {
     Season,
     Meet,
     League,
+    Athlete,
+    School,
     Event
 }
