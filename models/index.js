@@ -13,6 +13,5 @@ module.exports = {
     Meet,
     League,
     Athlete,
-    School,
     Event
 }
