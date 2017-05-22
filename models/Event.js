@@ -11,7 +11,7 @@ const eventSchema = new Schema({
     meet: { type: Objectid, required: true},
     season: { type: Objectid, required: true},
     eventType: eventTypeSchema,
-    isRelay: {type: Boolean, required: true}
+    isRelay: { type: Boolean, required: true}
 })
 
 module.exports = mongoose.model("Event", eventSchema);
