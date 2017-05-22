@@ -53,6 +53,25 @@ app.route("/seasons/:id")
 
 });
 
+app.route("/schools")
+.get((req, res) => {
+
+})
+.push((req, res) => {
+
+});
+
+app.route("/schools/:id")
+.get((req, res) => {
+
+})
+.post((req, res) => {
+
+})
+.delete((req, res) => {
+
+});
+
 app.route("/meets")
 .get((req, res) => {
 
@@ -100,6 +119,25 @@ app.route("/events")
 });
 
 app.route("/events/:id")
+.get((req, res) => {
+
+})
+.post((req, res) => {
+
+})
+.delete((req, res) => {
+
+});
+
+app.route("/athletes")
+.get((req, res) => {
+
+})
+.push((req, res) => {
+
+});
+
+app.route("/athletes/:id")
 .get((req, res) => {
 
 })
